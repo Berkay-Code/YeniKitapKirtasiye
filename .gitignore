@@ -4,3 +4,5 @@ obj/
 packages/
 /YeniKitapKirtasiyeWebApp/Controllers/HomeController.cs
 /YeniKitapKirtasiyeWebApp/Controllers/HomeController.cs
+.vs/YeniKitapKirtasiyeWebApp.slnx/v18
+/YeniKitapKirtasiyeWebApp/obj/Debug
