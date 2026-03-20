@@ -1,0 +1,46 @@
+﻿@model YeniKitapKirtasiyeWebApp.Models.Category
+
+@{
+    ViewBag.Title = "Ekle";
+    Layout = "~/Areas/ManagerPanel/Views/Shared/_LayoutPage.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">
+            <h2>Kategori Ekle</h2>
+        </div>
+    </div>
+    <div class="card-body">
+        @using (Html.BeginForm())
+        {
+            @*@Html.AntiForgeryToken()*@ @*Ekstra Güvenlik için eklenebilir*@
+            @*@Html.ValidationSummary()*@
+            if (TempData["basarili"] != null)
+            {
+                <div class="Basarili">
+                    @TempData["basarili"]
+                </div>
+            }
+            if (TempData["basarisiz"] != null)
+            {
+                <div class="Basarisiz">
+                    @TempData["basarisiz"]
+                </div>
+            }
+            <div class="row">
+                <label class="control-label">Kategori Adı</label>
+                @*@Html.TextBoxFor(model => model.Name, htmlAttributes: new { @class = "form-control" })*@
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "validation-message" }) @*"" olan yer ilk açılışta dolu mu gelsin diye belirtiyor*@
+            </div>
+            <div class="row">
+                <label for="IsActive">Aktif Kategori</label>
+                @Html.EditorFor(model => model.IsActive)
+            </div>
+            <div class="row">
+                <input type="submit" class="form-button" value="Kategori Ekle" />
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Areas/ManagerPanel/Assets/Css/ManagerStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="layout">
+        <div class="sidebar">
+            <div class="brandbar">
+                <h2>Yönetici Paneli</h2>
+            </div>
+            <div style="padding:24px 20px;">
+                <ul style="list-style:none;">
+                    <a href="@Url.Action("Index","Home")">
+                    <li style="margin:16px 0;">Dashboard</li></a>
+                    <a href="@Url.Action("Index","Category")">
+                    <li style="margin:16px 0;">Kategoriler</li></a>
+                    <a href="@Url.Action("Index","Product")">
+                    <li style="margin:16px 0;">Ürünler</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+
+            </div>
+            <div class="contentContainer">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>

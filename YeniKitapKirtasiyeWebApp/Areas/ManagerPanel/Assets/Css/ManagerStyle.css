@@ -1,0 +1,195 @@
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Calibri;
+}
+
+.layout {
+    display: flex;
+    min-height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    flex-shrink: 0; /* küçülmesine izin verme */
+    background: #ffffff;
+    position: fixed;
+}
+
+    .sidebar a {
+        color: #303030;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+        .sidebar a:hover {
+            color: #D587FF;
+        }
+
+.brandbar {
+    background: #ffffff;
+    padding: 20px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    color: #D587FF;
+    font-weight: 900;
+}
+
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 16px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 30px;
+}
+/* İçerik alanı */
+.content {
+    background-color: #f3f3f3;
+    margin-left: 200px; /* sidebar genişliği kadar boşluk */
+    flex-grow: 1;
+}
+
+.contentContainer {
+    padding: 24px;
+}
+
+.card {
+}
+
+.card-header {
+    border: 1px solid silver;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: white;
+}
+
+.card-title {
+    display: flex;
+    padding: 10px;
+    color: #D587FF;
+}
+
+    .card-title h3 {
+        margin-top: 5px;
+    }
+
+    .card-title a {
+        margin-left: auto;
+        background-color: #f1d7ff;
+        color: black;
+        border: 1px solid #D587FF;
+        padding: 7px 15px;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 7px;
+    }
+
+.card-body {
+    border: 1px solid silver;
+    background-color: white;
+}
+
+.card-footer {
+    border: 1px solid silver;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: white;
+    padding: 15px;
+}
+
+.table {
+    width: 100%;
+}
+
+    .table tr th {
+        padding: 10px;
+        border-bottom: 1px solid silver;
+        background-color: #e2e8f0;
+    }
+
+    .table tr td {
+        padding: 5px;
+        text-align: center;
+        border: 1px solid silver;
+    }
+
+.table-button {
+    padding: 3px 5px;
+    text-decoration: none;
+}
+
+.düzenle-button {
+    background-color: green;
+    color: white;
+}
+
+.sil-button {
+    background-color: red;
+    color: white;
+}
+
+.geriAl-button {
+    background-color: goldenrod;
+    color: white;
+}
+
+.row {
+    margin-bottom: 7px;
+    margin-left: 8px;
+}
+
+.control-label {
+    display: block;
+}
+
+.form-control {
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid silver;
+    width: 50%;
+}
+
+.form-select {
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid silver;
+    width: 20%;
+}
+
+
+.form-button {
+    padding: 10px 25px;
+    background-color: #f1d7ff;
+    color: #303030;
+    border: 1px solid #b63ff6;
+    border-radius: 5px;
+}
+
+    .form-button:hover {
+        cursor: pointer;
+        background-color: #eac5fe;
+    }
+
+.validation-message {
+    color: red;
+    display: block;
+}
+
+.basarili {
+    padding: 10px;
+    background-color: green;
+    border-color: green;
+}
+
+.basarisiz {
+    padding: 10px;
+    background-color: red;
+    border-color: red;
+}

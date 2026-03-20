@@ -1,0 +1,40 @@
+﻿@model YeniKitapKirtasiyeWebApp.Areas.ManagerPanel.Data.ViewModels.ManagerLoginViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Yönetici Giriş</title>
+    <link href="~/Areas/ManagerPanel/Assets/css/AccountingStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="LoginCardContainer">
+        <div class="row">
+            @using (Html.BeginForm())
+            {
+                <div class="row" style="text-align:center; padding:3px !important; margin-bottom:3px">
+                    <img src="~/Areas/ManagerPanel/Assets/Images/Secure Login.gif" width="150" />
+                </div>
+                <div class="row title">
+                    Admin Giriş
+                </div>
+                <div class="row">
+                    @Html.EditorFor(item => item.Mail, new { htmlAttributes = new { @class = "form-control", @placeholder = "Mail Adresiniz" } })
+                    @Html.ValidationMessageFor(item => item.Mail, "", new { @class = "validation-message" })
+                </div>
+                <div class="row">
+                    @Html.EditorFor(item => item.Password, new { htmlAttributes = new { @class = "form-control", @placeholder = "Şifreniz" } })
+                    @Html.ValidationMessageFor(item => item.Password, "", new { @class = "validation-message" })
+                </div>
+                <div class="row">
+                    <input type="submit" class="form-button" value="Giriş Yap" />
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>
