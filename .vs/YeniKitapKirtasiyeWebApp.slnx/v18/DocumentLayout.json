@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF6C3F4A-B170-480A-B111-DA4C20FBE267}|YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp.csproj|c:\\users\\celil\\source\\repos\\yenikitapkirtasiyewebapp\\yenikitapkirtasiyewebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF6C3F4A-B170-480A-B111-DA4C20FBE267}|YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp.csproj|solutionrelative:yenikitapkirtasiyewebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF6C3F4A-B170-480A-B111-DA4C20FBE267}|YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp.csproj|C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\yenikitapkirtasiyewebapp\\views\\userhome\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF6C3F4A-B170-480A-B111-DA4C20FBE267}|YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp.csproj|solutionrelative:yenikitapkirtasiyewebapp\\views\\userhome\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6C3F4A-B170-480A-B111-DA4C20FBE267}|YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp.csproj|c:\\users\\celil\\source\\repos\\yenikitapkirtasiyewebapp\\yenikitapkirtasiyewebapp\\assets\\css\\userpanel.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CF6C3F4A-B170-480A-B111-DA4C20FBE267}|YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp.csproj|solutionrelative:yenikitapkirtasiyewebapp\\assets\\css\\userpanel.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6C3F4A-B170-480A-B111-DA4C20FBE267}|YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp.csproj|C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\yenikitapkirtasiyewebapp\\controllers\\userhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF6C3F4A-B170-480A-B111-DA4C20FBE267}|YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp.csproj|solutionrelative:yenikitapkirtasiyewebapp\\controllers\\userhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6C3F4A-B170-480A-B111-DA4C20FBE267}|YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp.csproj|C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\yenikitapkirtasiyewebapp\\views\\shared\\_userlayoutpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF6C3F4A-B170-480A-B111-DA4C20FBE267}|YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp.csproj|solutionrelative:yenikitapkirtasiyewebapp\\views\\shared\\_userlayoutpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6C3F4A-B170-480A-B111-DA4C20FBE267}|YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp.csproj|C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\yenikitapkirtasiyewebapp\\views\\shared\\_categorysidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF6C3F4A-B170-480A-B111-DA4C20FBE267}|YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp.csproj|solutionrelative:yenikitapkirtasiyewebapp\\views\\shared\\_categorysidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6C3F4A-B170-480A-B111-DA4C20FBE267}|YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp.csproj|C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\yenikitapkirtasiyewebapp\\controllers\\sidebarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF6C3F4A-B170-480A-B111-DA4C20FBE267}|YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp.csproj|solutionrelative:yenikitapkirtasiyewebapp\\controllers\\sidebarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6C3F4A-B170-480A-B111-DA4C20FBE267}|YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp.csproj|C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\yenikitapkirtasiyewebapp\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF6C3F4A-B170-480A-B111-DA4C20FBE267}|YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp.csproj|solutionrelative:yenikitapkirtasiyewebapp\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +38,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 380,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -26,20 +54,97 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserPanel.css",
+              "DocumentMoniker": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp\\Assets\\Css\\UserPanel.css",
+              "RelativeDocumentMoniker": "YeniKitapKirtasiyeWebApp\\Assets\\Css\\UserPanel.css",
+              "ToolTip": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp\\Assets\\Css\\UserPanel.css",
+              "RelativeToolTip": "YeniKitapKirtasiyeWebApp\\Assets\\Css\\UserPanel.css",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAGQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-20T20:25:28.288Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "YeniKitapKirtasiyeWebApp\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "YeniKitapKirtasiyeWebApp\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T14:03:42.224Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp\\Views\\UserHome\\Index.cshtml",
+              "RelativeDocumentMoniker": "YeniKitapKirtasiyeWebApp\\Views\\UserHome\\Index.cshtml",
+              "ToolTip": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp\\Views\\UserHome\\Index.cshtml",
+              "RelativeToolTip": "YeniKitapKirtasiyeWebApp\\Views\\UserHome\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-20T19:45:48.92Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserHomeController.cs",
+              "DocumentMoniker": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp\\Controllers\\UserHomeController.cs",
+              "RelativeDocumentMoniker": "YeniKitapKirtasiyeWebApp\\Controllers\\UserHomeController.cs",
+              "ToolTip": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp\\Controllers\\UserHomeController.cs",
+              "RelativeToolTip": "YeniKitapKirtasiyeWebApp\\Controllers\\UserHomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T19:44:50.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_UserLayoutPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp\\Views\\Shared\\_UserLayoutPage.cshtml",
+              "RelativeDocumentMoniker": "YeniKitapKirtasiyeWebApp\\Views\\Shared\\_UserLayoutPage.cshtml",
+              "ToolTip": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp\\Views\\Shared\\_UserLayoutPage.cshtml",
+              "RelativeToolTip": "YeniKitapKirtasiyeWebApp\\Views\\Shared\\_UserLayoutPage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-20T19:31:17.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_CategorySidebar.cshtml",
+              "DocumentMoniker": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp\\Views\\Shared\\_CategorySidebar.cshtml",
+              "RelativeDocumentMoniker": "YeniKitapKirtasiyeWebApp\\Views\\Shared\\_CategorySidebar.cshtml",
+              "ToolTip": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp\\Views\\Shared\\_CategorySidebar.cshtml",
+              "RelativeToolTip": "YeniKitapKirtasiyeWebApp\\Views\\Shared\\_CategorySidebar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAACCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-20T19:17:29.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SidebarController.cs",
+              "DocumentMoniker": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp\\Controllers\\SidebarController.cs",
+              "RelativeDocumentMoniker": "YeniKitapKirtasiyeWebApp\\Controllers\\SidebarController.cs",
+              "ToolTip": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp\\Controllers\\SidebarController.cs",
+              "RelativeToolTip": "YeniKitapKirtasiyeWebApp\\Controllers\\SidebarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T19:11:27.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "YeniKitapKirtasiyeWebApp\\Controllers\\BaseController.cs",
+              "ToolTip": "C:\\Users\\celil\\source\\repos\\YeniKitapKirtasiyeWebApp\\YeniKitapKirtasiyeWebApp\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "YeniKitapKirtasiyeWebApp\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAB9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T19:09:16.357Z"
             }
           ]
         },

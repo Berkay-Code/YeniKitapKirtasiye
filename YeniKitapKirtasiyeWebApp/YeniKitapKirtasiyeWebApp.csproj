@@ -100,6 +100,7 @@
     <Content Include="Areas\ManagerPanel\Assets\Css\AccountingStyle.css" />
     <Content Include="Areas\ManagerPanel\Assets\Css\ManagerStyle.css" />
     <Content Include="Areas\ManagerPanel\Assets\Images\Secure Login.gif" />
+    <Content Include="Assets\Css\UserPanel.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -111,7 +112,9 @@
     <Compile Include="Areas\ManagerPanel\Controllers\ProductController.cs" />
     <Compile Include="Areas\ManagerPanel\Data\ViewModels\ManagerLoginViewModel.cs" />
     <Compile Include="Areas\ManagerPanel\ManagerPanelAreaRegistration.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\SidebarController.cs" />
+    <Compile Include="Controllers\UserHomeController.cs" />
     <Compile Include="Filters\ManagerAuthenticationFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -138,6 +141,9 @@
     <Content Include="Areas\ManagerPanel\Views\Product\Edit.cshtml" />
     <Content Include="Areas\ManagerPanel\Views\Account\Login.cshtml" />
     <None Include="packages.config" />
+    <Content Include="Views\Shared\_CategorySidebar.cshtml" />
+    <Content Include="Views\Shared\_UserLayoutPage.cshtml" />
+    <Content Include="Views\UserHome\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -148,8 +154,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Assets\ProductImages\" />
-    <Folder Include="Views\Home\" />
-    <Folder Include="Views\Shared\" />
+    <Folder Include="Views\Base\" />
+    <Folder Include="Views\Sidebar\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

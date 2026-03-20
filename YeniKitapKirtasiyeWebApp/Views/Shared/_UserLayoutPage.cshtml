@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Assets/Css/UserPanel.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="body">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <a href="@Url.Action("Index", "UserHome")" class="header-logo">Yeni Kitap Kırtasiye</a>
+            </div>
+            <div class="sidebar-container">
+                @Html.Action("Categories", "Sidebar")
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="header-right">
+                    @if (Session["UserName"] != null)
+                    {
+                        <span class="header-user">Merhaba, @Session["UserName"]</span>
+                        @Html.ActionLink("Çıkış", "Logout", "Account", null, new { @class = "header-btn" })
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Giriş Yap", "Login", "Account", null, new { @class = "header-btn" })
+                        @Html.ActionLink("Kayıt Ol", "Register", "Account", null, new { @class = "header-btn header-btn-outline" })
+                    }
+                </div>
+            </div>
+            <div class="content-container">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace YeniKitapKirtasiyeWebApp.Controllers
 {
-    public class HomeController : Controller
+    public class UserHomeController : Controller
     {
-        // GET: Home
+        // GET: UserHome
         public ActionResult Index()
         {
             return View();

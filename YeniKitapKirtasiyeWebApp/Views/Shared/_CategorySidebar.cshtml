@@ -1,0 +1,11 @@
+﻿@model IEnumerable<YeniKitapKirtasiyeWebApp.Models.Category>
+<div class="sidebar-kategoriler">
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                @Html.ActionLink(item.Name, "Index", "UserProduct", new { kategoriID = item.ID }, new { @class = "sidebar-link" })
+            </li>
+        }
+    </ul>
+</div>
