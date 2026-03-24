@@ -161,3 +161,104 @@ body {
     padding: 28px;
     background-color: #f2f5ec;
 }
+
+/* === SAYFA BAŞLIĞI === */
+.page-title {
+    font-size: 13px;
+    color: #4a7855;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.page-subtitle {
+    font-size: 22px;
+    color: #1e3028;
+    font-family: 'Georgia', serif;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #c0d0a8;
+    padding-bottom: 14px;
+}
+
+/* === ÜRÜN GRİD === */
+.urun-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25%;
+}
+
+/* === ÜRÜN KARTI === */
+.urun-kart {
+    background-color: #fafaf5;
+    border: 1px solid #d8e0c8;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.15s, transform 0.15s;
+}
+
+    .urun-kart:hover {
+        border-color: #7cbd5a;
+        transform: translateY(-2px);
+    }
+
+.urun-fotograf {
+    width: 100%;
+    height: 160px;
+    background-color: #eef3e8;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .urun-fotograf img {
+        width: 70%;
+        height: 70%;
+        object-fit: cover;
+    }
+
+.urun-bilgi {
+    padding: 14px;
+}
+
+.urun-kategori {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #7cbd5a;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+}
+
+.urun-isim {
+    font-size: 14px;
+    color: #1e3028;
+    font-family: 'Georgia', serif;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.urun-fiyat {
+    font-size: 15px;
+    color: #3a5c44;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.urun-detay-btn {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 11px;
+    color: #7cbd5a;
+    font-family: sans-serif;
+    text-decoration: none;
+    border-bottom: 1px solid #7cbd5a;
+    padding-bottom: 1px;
+}
+
+    .urun-detay-btn:hover {
+        color: #5ea040;
+        border-bottom-color: #5ea040;
+    }
