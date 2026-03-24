@@ -21,7 +21,7 @@
                 <div class="header-right">
                     @if (Session["UserName"] != null)
                     {
-                        <span class="header-user">Merhaba, @Session["UserName"]</span>
+                        <div class="header-user">Merhaba, @Session["UserName"]</div>
                         @Html.ActionLink("Çıkış", "Logout", "Account", null, new { @class = "header-btn" })
                     }
                     else

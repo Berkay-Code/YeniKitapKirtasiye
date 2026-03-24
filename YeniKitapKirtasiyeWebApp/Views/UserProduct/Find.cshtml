@@ -1,0 +1,49 @@
+﻿@model YeniKitapKirtasiyeWebApp.Models.Product
+@{
+    ViewBag.Title = "Find";
+    Layout = "~/Views/Shared/_UserLayoutPage.cshtml";
+}
+
+<div class="breadcrumb">
+    <a href="@Url.Action("Index", "UserHome")">Anasayfa</a>
+    <span class="breadcrumb-sep">›</span>
+    <a href="@Url.Action("Index", "UserProduct", new { kategoriID = Model.Category_ID })">
+        @Model.category.Name
+    </a>
+    <span class="breadcrumb-sep">›</span>
+    <span>@Model.Name</span>
+</div>
+
+<div class="detay-wrapper">
+
+    <div class="detay-fotograf">
+        <img src="~/Assets/ProductImages/@Model.ImagePath"
+             alt="@Model.Name" />
+    </div>
+
+    <div class="detay-bilgi">
+        <div class="detay-kategori">@Model.category.Name</div>
+        <div class="detay-isim">@Model.Name</div>
+        <div class="detay-fiyat">@Model.Price.ToString("C")</div>
+
+        <hr class="detay-separator" />
+
+        <div class="detay-aciklama">@Model.Description</div>
+
+        @if (Model.Stock > 0)
+        {
+            <span class="stok-badge">Stokta Var</span>
+        }
+        else
+        {
+            <span class="stok-badge yok">Stokta Yok</span>
+        }
+        @*!!!!!!! Sepete Ekleme İşlemlerini Düzenle !!!!!!! *@
+        <div style="display:flex; flex-direction:column; gap:10px; align-items:flex-start;">
+            <a href="@Url.Action("Index", "UserHome")" class="sepet-btn">Sepete Ekle</a>
+            <a href="@Url.Action("Index", "UserHome")" class="geri-btn">← Ürünlere Dön</a>
+        </div>
+    </div>
+
+</div>
+

@@ -114,7 +114,9 @@
     <Compile Include="Areas\ManagerPanel\ManagerPanelAreaRegistration.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\SidebarController.cs" />
+    <Compile Include="Controllers\UserCategoryController.cs" />
     <Compile Include="Controllers\UserHomeController.cs" />
+    <Compile Include="Controllers\UserProductController.cs" />
     <Compile Include="Filters\ManagerAuthenticationFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -144,6 +146,8 @@
     <Content Include="Views\Shared\_CategorySidebar.cshtml" />
     <Content Include="Views\Shared\_UserLayoutPage.cshtml" />
     <Content Include="Views\UserHome\Index.cshtml" />
+    <Content Include="Views\UserCategory\Find.cshtml" />
+    <Content Include="Views\UserProduct\Find.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
