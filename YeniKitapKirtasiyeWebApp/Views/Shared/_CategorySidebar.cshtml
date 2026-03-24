@@ -4,7 +4,7 @@
         @foreach (var item in Model)
         {
             <li>
-                @Html.ActionLink(item.Name, "Index", "UserProduct", new { kategoriID = item.ID }, new { @class = "sidebar-link" })
+                @Html.ActionLink(item.Name, "#", "#", new { kategoriID = item.ID }, new { @class = "sidebar-link" })
             </li>
         }
     </ul>

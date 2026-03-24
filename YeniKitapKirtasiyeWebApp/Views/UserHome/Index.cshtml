@@ -1,8 +1,28 @@
-﻿
+﻿@model IEnumerable<YeniKitapKirtasiyeWebApp.Models.Product>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_UserLayoutPage.cshtml";
 }
 
-<h2>Index</h2>
+<div class="page-title">Ürünlerimiz</div>
+<div class="page-subtitle">Tüm Ürünler</div>
+
+<div class="urun-grid">
+    @foreach (var u in Model)
+    {
+        <div class="urun-kart">
+            <div class="urun-fotograf">
+                <img src="~/Assets/ProductImages/@u.ImagePath"
+                     alt="@u.Name" />
+            </div>
+            <div class="urun-bilgi">
+                <div class="urun-kategori">@u.category.Name</div>
+                <div class="urun-isim">@u.Name</div>
+                <div class="urun-fiyat">@u.Price.ToString("C")</div>
+                <a href="@Url.Action("#", "#", new { id = u.ID })"
+                   class="urun-detay-btn">Detayı Gör →</a>
+            </div>
+        </div>
+    }
+</div>
 
