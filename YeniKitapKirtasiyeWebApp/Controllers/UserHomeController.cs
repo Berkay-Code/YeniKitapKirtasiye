@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using YeniKitapKirtasiyeWebApp.Filters;
 using YeniKitapKirtasiyeWebApp.Models;
 
 namespace YeniKitapKirtasiyeWebApp.Controllers
 {
+    [UserAuthenticationFilter]
     public class UserHomeController : Controller
     {
         YeniKitapKirtasiyeDBModel db = new YeniKitapKirtasiyeDBModel();

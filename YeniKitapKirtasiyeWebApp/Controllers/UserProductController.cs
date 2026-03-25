@@ -5,10 +5,12 @@ using System.Web;
 using System.Web.Mvc;
 using YeniKitapKirtasiyeWebApp.Data.Helper;
 using YeniKitapKirtasiyeWebApp.Data.ViewModel;
+using YeniKitapKirtasiyeWebApp.Filters;
 using YeniKitapKirtasiyeWebApp.Models;
 
 namespace YeniKitapKirtasiyeWebApp.Controllers
 {
+    [UserAuthenticationFilter]
     public class UserProductController : Controller
     {
         YeniKitapKirtasiyeDBModel db = new YeniKitapKirtasiyeDBModel();

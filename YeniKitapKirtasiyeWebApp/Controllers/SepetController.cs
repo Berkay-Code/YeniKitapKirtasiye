@@ -5,9 +5,11 @@ using System.Web;
 using System.Web.Mvc;
 using YeniKitapKirtasiyeWebApp.Data.Helper;
 using YeniKitapKirtasiyeWebApp.Data.ViewModel;
+using YeniKitapKirtasiyeWebApp.Filters;
 
 namespace YeniKitapKirtasiyeWebApp.Controllers
 {
+    [UserAuthenticationFilter]
     public class SepetController : Controller
     {
         // GET: Sepet

@@ -100,6 +100,8 @@
     <Content Include="Areas\ManagerPanel\Assets\Css\AccountingStyle.css" />
     <Content Include="Areas\ManagerPanel\Assets\Css\ManagerStyle.css" />
     <Content Include="Areas\ManagerPanel\Assets\Images\Secure Login.gif" />
+    <Content Include="Assets\Css\abstract-bright-geometric-line-modern-wallpaper-design_1017-60099.jpg" />
+    <Content Include="Assets\Css\Login_SignIn_CSS.css" />
     <Content Include="Assets\Css\UserPanel.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -124,6 +126,7 @@
     <Compile Include="Data\ViewModel\RegisterViewModel.cs" />
     <Compile Include="Data\ViewModel\SepetItem.cs" />
     <Compile Include="Filters\ManagerAuthenticationFilterAttribute.cs" />
+    <Compile Include="Filters\UserAuthenticationFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -157,6 +160,8 @@
     <Content Include="Views\UserProduct\Find.cshtml" />
     <Content Include="Views\Sepet\Index.cshtml" />
     <Content Include="Views\Sepet\Onayla.cshtml" />
+    <Content Include="Views\UserAccount\Login.cshtml" />
+    <Content Include="Views\UserAccount\Register.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -169,7 +174,6 @@
     <Folder Include="Assets\ProductImages\" />
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Sidebar\" />
-    <Folder Include="Views\UserAccount\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

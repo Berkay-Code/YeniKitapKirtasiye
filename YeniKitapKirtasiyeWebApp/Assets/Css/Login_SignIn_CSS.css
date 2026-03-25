@@ -1,0 +1,140 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../Css/abstract-bright-geometric-line-modern-wallpaper-design_1017-60099.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+}
+
+p {
+    color: white;
+    padding-top: 30px;
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-right: 15px;
+}
+
+.left-box, .right-box {
+    text-align: center;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid silver;
+}
+
+.right-box {
+    background: linear-gradient(to right, #FF512F, #DD2476); /* Geçişli renkler böyle yazılır */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: none;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+    .right-box h1 {
+        font-family: 'Poppins', 'Montserrat', sans-serif;
+        color: white;
+        font-weight: 900;
+    }
+
+    .right-box .button {
+        background: linear-gradient(to right, #FF512F, #DD2476);
+        border: 1px solid white;
+        color: white;
+        margin-top: 30px;
+        background: transparent;
+    }
+
+.left-box {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: none;
+    padding-top: 60px;
+    background-color: white;
+}
+
+    .left-box a {
+        text-decoration: none;
+        color: #656565;
+    }
+
+        .left-box a:hover {
+            color: Highlight;
+        }
+
+    .left-box p {
+        color: #656565;
+    }
+
+    .left-box h1 {
+        font-family: 'Poppins', 'Montserrat', sans-serif;
+        font-weight: 900;
+        margin-bottom: 25px;
+    }
+
+    .left-box .button {
+        background: #ff4b2b;
+        color: #fff;
+        margin-top: 15px;
+    }
+
+.button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 40px;
+    cursor: pointer;
+}
+
+.textbox {
+    width: 70%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: none;
+    background: #f0f0f0;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.socialContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social {
+    height: 40px;
+    width: 40px;
+    border: 1px solid silver;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.warningText {
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    border: 1px solid darkred;
+}

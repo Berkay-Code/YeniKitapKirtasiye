@@ -1,0 +1,63 @@
+﻿@model YeniKitapKirtasiyeWebApp.Data.ViewModel.RegisterViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kayıt Ol</title>
+    <link href="~/Assets/Css/Login_SignIn_CSS.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="left-box shadow" style="padding-bottom: 40px;">
+            <h1>Create Account</h1>
+            <div class="socialContainer">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>or use email for your registration</p>
+            <br />
+
+            @using (Html.BeginForm("Register", "Account"))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="box">
+                    <input type="text" name="Ad" class="textbox"
+                           placeholder="Name" value="@Model?.Ad" />
+                           @*veriyi korumak için value içine model yazıyoruz ve nullable olması için ise ? atıyoruz*@
+                </div>
+                <div class="box">
+                    <input type="text" name="Soyad" class="textbox"
+                           placeholder="Surname" value="@Model?.Soyad" />
+                </div>
+                <div class="box">
+                    <input type="email" name="Email" class="textbox"
+                           placeholder="Email" value="@Model?.Email" />
+                </div>
+                <div class="box">
+                    <input type="password" name="Sifre" class="textbox"
+                           placeholder="Password" />
+                </div>
+                <div class="box">
+                    <input type="password" name="SifreTekrar" class="textbox"
+                           placeholder="Confirm Password" />
+                </div>
+
+                if (ViewBag.Hata != null)
+                {
+                    <div class="warningText">@ViewBag.Hata</div>
+                }
+
+                <div>
+                    <button type="submit" class="button">SIGN UP</button>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>
