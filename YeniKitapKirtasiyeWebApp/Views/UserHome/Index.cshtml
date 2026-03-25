@@ -19,7 +19,7 @@
                 <div class="urun-kategori">@u.category.Name</div>
                 <div class="urun-isim">@u.Name</div>
                 <div class="urun-fiyat">@u.Price.ToString("C")</div>
-                <a href="@Url.Action("#", "#", new { id = u.ID })"
+                <a href="@Url.Action("Find", "UserProduct", new { id = u.ID })"
                    class="urun-detay-btn">Detayı Gör →</a>
             </div>
         </div>

@@ -1,0 +1,73 @@
+﻿@model IEnumerable<YeniKitapKirtasiyeWebApp.Data.ViewModel.SepetItem>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Assets/Css/UserPanel.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="page-title">Son Adım</div>
+    <div class="page-subtitle">Ödeme</div>
+
+    <div class="odeme-wrapper">
+
+        <div class="siparis-ozet">
+            <h3 class="ozet-baslik">Sipariş Özeti</h3>
+            @foreach (var item in Model)
+            {
+                <div class="ozet-urun">
+                    <img src="~/Assets/ProductImages/@item.Fotograf" />
+                    <div class="ozet-urun-bilgi">
+                        <span class="ozet-urun-adi">@item.UrunAdi</span>
+                        <span class="ozet-urun-adet">@item.Adet adet</span>
+                    </div>
+                    <span class="ozet-urun-fiyat">@item.Toplam.ToString("C")</span>
+                </div>
+            }
+            <div class="ozet-separator"></div>
+            <div class="ozet-satir ozet-toplam">
+                <div>Genel Toplam</div>
+                <div>@Model.Sum(x => x.Toplam).ToString("C")</div>
+            </div>
+        </div>
+
+        <div class="kart-form">
+            <h3 class="ozet-baslik">Kart Bilgileri</h3>
+
+            <div class="form-grup">
+                <label>Kart Üzerindeki İsim</label>
+                <input type="text" placeholder="Ad Soyad" class="form-input" />
+            </div>
+
+            <div class="form-grup">
+                <label>Kart Numarası</label>
+                <input type="text" placeholder="0000 0000 0000 0000"
+                       maxlength="19" class="form-input" id="kartNo" />
+            </div>
+
+            <div class="form-row">
+                <div class="form-grup">
+                    <label>Son Kullanma Tarihi</label>
+                    <input type="text" placeholder="AA / YY"
+                           maxlength="7" class="form-input" />
+                </div>
+                <div class="form-grup">
+                    <label>CVV</label>
+                    <input type="text" placeholder="000"
+                           maxlength="3" class="form-input" />
+                </div>
+            </div>
+
+            <button class="sepet-btn odeme-btn">Ödemeyi Tamamla</button>
+
+            <a href="@Url.Action("Index", "Sepet")" class="geri-btn">← Sepete Dön</a>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -113,10 +113,16 @@
     <Compile Include="Areas\ManagerPanel\Data\ViewModels\ManagerLoginViewModel.cs" />
     <Compile Include="Areas\ManagerPanel\ManagerPanelAreaRegistration.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\SepetController.cs" />
     <Compile Include="Controllers\SidebarController.cs" />
+    <Compile Include="Controllers\UserAccountController.cs" />
     <Compile Include="Controllers\UserCategoryController.cs" />
     <Compile Include="Controllers\UserHomeController.cs" />
     <Compile Include="Controllers\UserProductController.cs" />
+    <Compile Include="Data\Helper\SepetHelper.cs" />
+    <Compile Include="Data\ViewModel\LoginViewModel.cs" />
+    <Compile Include="Data\ViewModel\RegisterViewModel.cs" />
+    <Compile Include="Data\ViewModel\SepetItem.cs" />
     <Compile Include="Filters\ManagerAuthenticationFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -125,6 +131,7 @@
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Manager.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Models\YeniKitapKirtasiyeDBModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -148,6 +155,8 @@
     <Content Include="Views\UserHome\Index.cshtml" />
     <Content Include="Views\UserCategory\Find.cshtml" />
     <Content Include="Views\UserProduct\Find.cshtml" />
+    <Content Include="Views\Sepet\Index.cshtml" />
+    <Content Include="Views\Sepet\Onayla.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -160,6 +169,7 @@
     <Folder Include="Assets\ProductImages\" />
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Sidebar\" />
+    <Folder Include="Views\UserAccount\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

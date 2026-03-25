@@ -15,6 +15,7 @@ namespace YeniKitapKirtasiyeWebApp.Models
         public DbSet<Category> Categories { get; set; }
         public DbSet<Manager> Managers { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

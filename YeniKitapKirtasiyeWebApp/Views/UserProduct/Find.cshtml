@@ -6,12 +6,12 @@
 
 <div class="breadcrumb">
     <a href="@Url.Action("Index", "UserHome")">Anasayfa</a>
-    <span class="breadcrumb-sep">›</span>
+    <div class="breadcrumb-sep">›</div>
     <a href="@Url.Action("Index", "UserProduct", new { kategoriID = Model.Category_ID })">
         @Model.category.Name
     </a>
-    <span class="breadcrumb-sep">›</span>
-    <span>@Model.Name</span>
+    <div class="breadcrumb-sep">›</div>
+    <div>@Model.Name</div>
 </div>
 
 <div class="detay-wrapper">
@@ -32,16 +32,27 @@
 
         @if (Model.Stock > 0)
         {
-            <span class="stok-badge">Stokta Var</span>
+            <div class="stok-badge">Stokta Var</div>
         }
         else
         {
-            <span class="stok-badge yok">Stokta Yok</span>
+            <div class="stok-badge yok">Stokta Yok</div>
         }
-        @*!!!!!!! Sepete Ekleme İşlemlerini Düzenle !!!!!!! *@
+
         <div style="display:flex; flex-direction:column; gap:10px; align-items:flex-start;">
-            <a href="@Url.Action("Index", "UserHome")" class="sepet-btn">Sepete Ekle</a>
-            <a href="@Url.Action("Index", "UserHome")" class="geri-btn">← Ürünlere Dön</a>
+            @if (Session["UserName"] != null)
+            {
+                <a href="@Url.Action("SepeteEkle", "UserProduct", new { id = Model.ID })"
+                   class="sepet-btn">
+                    Sepete Ekle
+                </a>
+            }
+            else
+            {
+                <a href="@Url.Action("Login", "UserAccount")" class="sepet-btn sepet-btn-disabled">
+                    Sepete Eklemek İçin Giriş Yap
+                </a>
+            }
         </div>
     </div>
 

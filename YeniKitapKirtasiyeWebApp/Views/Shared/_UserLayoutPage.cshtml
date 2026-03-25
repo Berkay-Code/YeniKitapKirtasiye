@@ -22,12 +22,15 @@
                     @if (Session["UserName"] != null)
                     {
                         <div class="header-user">Merhaba, @Session["UserName"]</div>
-                        @Html.ActionLink("Çıkış", "Logout", "Account", null, new { @class = "header-btn" })
+                        <a href="@Url.Action("Index", "Sepet")" class="header-btn header-btn-outline">
+                            Sepet (@YeniKitapKirtasiyeWebApp.Data.Helper.SepetHelper.ToplamAdet(Session))
+                        </a>
+                        @Html.ActionLink("Çıkış", "Logout", "UserAccount", null, new { @class = "header-btn" })
                     }
                     else
                     {
-                        @Html.ActionLink("Giriş Yap", "Login", "Account", null, new { @class = "header-btn" })
-                        @Html.ActionLink("Kayıt Ol", "Register", "Account", null, new { @class = "header-btn header-btn-outline" })
+                        @Html.ActionLink("Giriş Yap", "Login", "UserAccount", null, new { @class = "header-btn" })
+                        @Html.ActionLink("Kayıt Ol", "Register", "UserAccount", null, new { @class = "header-btn header-btn-outline" })
                     }
                 </div>
             </div>
