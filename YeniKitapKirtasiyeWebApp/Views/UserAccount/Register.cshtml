@@ -11,7 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="container">
+    <div class="container" style="margin-top:40px;">
         <div class="left-box shadow" style="padding-bottom: 40px;">
             <h1>Create Account</h1>
             <div class="socialContainer">
@@ -21,41 +21,77 @@
             </div>
             <p>or use email for your registration</p>
             <br />
-
-            @using (Html.BeginForm("Register", "Account"))
+            @if (Model != null)
             {
-                @Html.AntiForgeryToken()
-
-                <div class="box">
-                    <input type="text" name="Ad" class="textbox"
-                           placeholder="Name" value="@Model?.Ad" />
-                           @*veriyi korumak için value içine model yazıyoruz ve nullable olması için ise ? atıyoruz*@
-                </div>
-                <div class="box">
-                    <input type="text" name="Soyad" class="textbox"
-                           placeholder="Surname" value="@Model?.Soyad" />
-                </div>
-                <div class="box">
-                    <input type="email" name="Email" class="textbox"
-                           placeholder="Email" value="@Model?.Email" />
-                </div>
-                <div class="box">
-                    <input type="password" name="Sifre" class="textbox"
-                           placeholder="Password" />
-                </div>
-                <div class="box">
-                    <input type="password" name="SifreTekrar" class="textbox"
-                           placeholder="Confirm Password" />
-                </div>
-
-                if (ViewBag.Hata != null)
+                using (Html.BeginForm("Register", "UserAccount"))
                 {
-                    <div class="warningText">@ViewBag.Hata</div>
-                }
 
-                <div>
-                    <button type="submit" class="button">SIGN UP</button>
-                </div>
+                    <div class="box">
+                        <input type="text" name="Name" class="textbox"
+                               placeholder="Name" value="@Model.Name" />
+                    </div>
+                    <div class="box">
+                        <input type="text" name="Surname" class="textbox"
+                               placeholder="Surname" value="@Model.Surname" />
+                    </div>
+                    <div class="box">
+                        <input type="email" name="Mail" class="textbox"
+                               placeholder="Email" value="@Model.Mail" />
+                    </div>
+                    <div class="box">
+                        <input type="password" name="Password" class="textbox"
+                               placeholder="Password" />
+                    </div>
+                    <div class="box">
+                        <input type="password" name="PasswordAgain" class="textbox"
+                               placeholder="Confirm Password" />
+                    </div>
+
+                    if (ViewBag.Hata != null)
+                    {
+                        <div class="warningText">@ViewBag.Hata</div>
+                    }
+
+                    <div>
+                        <button type="submit" class="button">SIGN UP</button>
+                    </div>
+                }
+            }
+            else
+            {
+                using (Html.BeginForm("Register", "UserAccount"))
+                {
+
+                    <div class="box">
+                        <input type="text" name="Name" class="textbox"
+                               placeholder="Name" />
+                    </div>
+                    <div class="box">
+                        <input type="text" name="Surname" class="textbox"
+                               placeholder="Surname" />
+                    </div>
+                    <div class="box">
+                        <input type="email" name="Mail" class="textbox"
+                               placeholder="Email" />
+                    </div>
+                    <div class="box">
+                        <input type="password" name="Password" class="textbox"
+                               placeholder="Password" />
+                    </div>
+                    <div class="box">
+                        <input type="password" name="PasswordAgain" class="textbox"
+                               placeholder="Confirm Password" />
+                    </div>
+
+                    if (ViewBag.Hata != null)
+                    {
+                        <div class="warningText">@ViewBag.Hata</div>
+                    }
+
+                    <div>
+                        <button type="submit" class="button">SIGN UP</button>
+                    </div>
+                }
             }
         </div>
     </div>

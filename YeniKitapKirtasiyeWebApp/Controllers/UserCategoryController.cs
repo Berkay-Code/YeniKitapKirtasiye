@@ -8,7 +8,6 @@ using YeniKitapKirtasiyeWebApp.Models;
 
 namespace YeniKitapKirtasiyeWebApp.Controllers
 {
-    [UserAuthenticationFilter]
     public class UserCategoryController : Controller
     {
         YeniKitapKirtasiyeDBModel db = new YeniKitapKirtasiyeDBModel();

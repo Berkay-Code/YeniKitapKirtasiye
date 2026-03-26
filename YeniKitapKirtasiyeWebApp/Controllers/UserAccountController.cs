@@ -68,12 +68,14 @@ namespace YeniKitapKirtasiyeWebApp.Controllers
                 Name = model.Name,
                 Surname = model.Surname,
                 Mail = model.Mail,
-                Password = model.Password
+                Password = model.Password,
+                CreationTime = DateTime.Now,
+                IsActive = true
             };
 
             db.Users.Add(kullanici);
             db.SaveChanges();
-            Session["KullaniciAdi"] = kullanici.Name + " " + kullanici.Surname;
+            Session["UserName"] = kullanici.Name + " " + kullanici.Surname;
 
             return RedirectToAction("Index", "UserHome");
         }

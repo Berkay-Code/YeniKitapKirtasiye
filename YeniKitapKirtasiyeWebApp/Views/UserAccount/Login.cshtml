@@ -21,15 +21,14 @@
             </div>
             <p>or use your account</p>
 
-            @using (Html.BeginForm("Login", "Account"))
+            @using (Html.BeginForm("Login", "UserAccount"))
             {
                 <div class="box">
-                    <input type="email" name="Email" class="textbox"
-                           placeholder="Email" value="@Model?.Email" />
-                    @*veriyi korumak için value içine model yazıyoruz ve nullable olması için ise ? atıyoruz*@
+                    <input type="email" name="Mail" class="textbox"
+                           placeholder="Email"  />
                 </div>
                 <div class="box">
-                    <input type="password" name="Sifre" class="textbox"
+                    <input type="password" name="Password" class="textbox"
                            placeholder="Password" />
                 </div>
                 <br />
@@ -45,17 +44,16 @@
                 </div>
             }
         </div>
-    </div>
-
-    <div class="right-box shadow">
-        <h1>Hello, Friend!</h1>
-        <p>Enter your personal details and start journey with us</p>
-        <div>
-            <a href="@Url.Action("Register", "Account")"
-               class="button"
-               style="display:inline-block; text-decoration:none; padding:12px 40px;">
-                SIGN UP
-            </a>
+        <div class="right-box shadow">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <div>
+                <a href="@Url.Action("Register", "UserAccount")"
+                   class="button"
+                   style="display:inline-block; text-decoration:none; padding:12px 40px;">
+                    SIGN UP
+                </a>
+            </div>
         </div>
     </div>
 </body>

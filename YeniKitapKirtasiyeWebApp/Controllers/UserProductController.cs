@@ -10,7 +10,6 @@ using YeniKitapKirtasiyeWebApp.Models;
 
 namespace YeniKitapKirtasiyeWebApp.Controllers
 {
-    [UserAuthenticationFilter]
     public class UserProductController : Controller
     {
         YeniKitapKirtasiyeDBModel db = new YeniKitapKirtasiyeDBModel();
@@ -28,6 +27,7 @@ namespace YeniKitapKirtasiyeWebApp.Controllers
             }
         }
 
+        [UserAuthenticationFilter]
         public ActionResult SepeteEkle(int id)
         {
             Product urun = db.Products.FirstOrDefault(u => u.ID == id);

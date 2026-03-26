@@ -21,7 +21,7 @@ namespace YeniKitapKirtasiyeWebApp.Filters
         {
             if (filterContext.Result == null || filterContext.Result is HttpUnauthorizedResult)
             {
-                filterContext.Result = new RedirectResult("~/Views/UserAccount/Login");
+                filterContext.Result = new RedirectResult("~/UserAccount/Login");
             }
         }
     }
