@@ -1,0 +1,73 @@
+﻿@model IEnumerable<YeniKitapKirtasiyeWebApp.Data.ViewModel.SepetItem>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayoutPage.cshtml";
+}
+
+<div class="page-title">Alışveriş</div>
+<div class="page-subtitle">Sepetim</div>
+
+@if (!Model.Any())
+{
+    <div class="sepet-bos">
+        <p>Sepetiniz boş.</p>
+        <a href="@Url.Action("Index", "UserHome")" class="sepet-btn">Alışverişe Başla</a>
+    </div>
+}
+else
+{
+    <div class="sepet-wrapper">
+        <table class="sepet-tablo">
+            <thead>
+                <tr>
+                    <th>Ürün</th>
+                    <th>Fiyat</th>
+                    <th>Adet</th>
+                    <th>Toplam</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="urun-td">
+                            <img src="~/Assets/ProductImages/@item.Fotograf" />
+                            <span>@item.UrunAdi</span>
+                        </td>
+                        <td>@item.Fiyat.ToString("C")</td>
+                        <td>@item.Adet</td>
+                        <td>@item.Toplam.ToString("C")</td>
+                        <td>
+                            <a href="@Url.Action("Cikar", "Sepet", new { urunId = item.UrunId })"
+                               class="cikar-btn">Kaldır</a>
+                        </td>
+                        <td>
+                            <div class="adet-kontrol">
+                                <a href="@Url.Action("AdetGuncelle", "Sepet", new { urunId = item.UrunId, islem = "azalt" })"
+                                   class="adet-btn">−</a>
+
+                                <div class="adet-sayi">@item.Adet</div>
+
+                                <a href="@Url.Action("AdetGuncelle", "Sepet", new { urunId = item.UrunId, islem = "artir" })"
+                                   class="adet-btn">+</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="sepet-ozet">
+            <div class="ozet-satir ozet-toplam">
+                <div>Genel Toplam</div>
+                <div>@Model.Sum(x => x.Toplam).ToString("C")</div>
+            </div>
+            <a href="@Url.Action("Onayla", "Sepet")" class="sepet-btn">
+                Siparişi Onayla →
+            </a>
+        </div>
+    </div>
+}
+

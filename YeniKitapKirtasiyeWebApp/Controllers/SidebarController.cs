@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using YeniKitapKirtasiyeWebApp.Models;
 
 namespace YeniKitapKirtasiyeWebApp.Controllers
 {
@@ -11,7 +12,7 @@ namespace YeniKitapKirtasiyeWebApp.Controllers
         [ChildActionOnly] // Sadece html.action ile çağrılabilir
         public ActionResult Categories()
         {
-            var kategoriler = db.Categories.ToList();
+            List<Category> kategoriler = db.Categories.ToList();
             return PartialView("_CategorySidebar", kategoriler);
         }
     }

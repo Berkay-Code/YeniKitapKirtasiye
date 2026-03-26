@@ -16,7 +16,7 @@
 
         protected override void Seed(YeniKitapKirtasiyeWebApp.Models.YeniKitapKirtasiyeDBModel context)
         {
-            //context.Managers.AddOrUpdate(new Manager() { ID = 1, Name = "Dev", Surname = "Dev", Mail = "dev@dev.com", Password = "1234", IsActive = true, CreationTime = DateTime.Now });
+            //context.Users.AddOrUpdate(new User() { ID = 1, Name = "User", Surname = "User", Mail = "user@user.com", Password = "1234", IsActive = true, CreationTime = DateTime.Now });
         }
     }
 }

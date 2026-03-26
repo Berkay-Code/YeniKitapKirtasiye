@@ -1,0 +1,60 @@
+﻿@model YeniKitapKirtasiyeWebApp.Data.ViewModel.LoginViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Giriş Yap</title>
+    <link href="~/Assets/Css/Login_SignIn_CSS.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="left-box shadow">
+            <h1>Sign in</h1>
+            <div class="socialContainer">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>or use your account</p>
+
+            @using (Html.BeginForm("Login", "UserAccount"))
+            {
+                <div class="box">
+                    <input type="email" name="Mail" class="textbox"
+                           placeholder="Email"  />
+                </div>
+                <div class="box">
+                    <input type="password" name="Password" class="textbox"
+                           placeholder="Password" />
+                </div>
+                <br />
+                <a href="#">Forgot Your Password?</a>
+
+                if (ViewBag.Hata != null)
+                {
+                    <div class="warningText">@ViewBag.Hata</div>
+                }
+
+                <div>
+                    <button type="submit" class="button">SIGN IN</button>
+                </div>
+            }
+        </div>
+        <div class="right-box shadow">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <div>
+                <a href="@Url.Action("Register", "UserAccount")"
+                   class="button"
+                   style="display:inline-block; text-decoration:none; padding:12px 40px;">
+                    SIGN UP
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
