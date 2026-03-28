@@ -102,6 +102,7 @@
     <Content Include="Areas\ManagerPanel\Assets\Images\Secure Login.gif" />
     <Content Include="Assets\Css\abstract-bright-geometric-line-modern-wallpaper-design_1017-60099.jpg" />
     <Content Include="Assets\Css\Login_SignIn_CSS.css" />
+    <Content Include="Assets\Css\Logo.png" />
     <Content Include="Assets\Css\UserPanel.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -117,6 +118,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\SepetController.cs" />
     <Compile Include="Controllers\SidebarController.cs" />
+    <Compile Include="Controllers\UrunController.cs" />
     <Compile Include="Controllers\UserAccountController.cs" />
     <Compile Include="Controllers\UserCategoryController.cs" />
     <Compile Include="Controllers\UserHomeController.cs" />
@@ -174,6 +176,7 @@
     <Folder Include="Assets\ProductImages\" />
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Sidebar\" />
+    <Folder Include="Views\Urun\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

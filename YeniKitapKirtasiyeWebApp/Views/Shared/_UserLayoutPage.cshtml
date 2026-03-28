@@ -10,10 +10,15 @@
     <div class="body">
         <div class="sidebar">
             <div class="sidebar-header">
+                <div class="header-foto">
+                    <img src="~/Assets/Css/Logo.png" />
+                </div>
                 <a href="@Url.Action("Index", "UserHome")" class="header-logo">Yeni Kitap Kırtasiye</a>
             </div>
             <div class="sidebar-container">
                 @Html.Action("Categories", "Sidebar")
+                @*@{ Html.RenderAction("_MenuOlustur", "Kategori"); }*@  @*RenderAction ile de oluşturulabilir*@
+
             </div>
         </div>
         <div class="content">

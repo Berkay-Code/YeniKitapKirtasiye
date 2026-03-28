@@ -10,19 +10,21 @@
 <div class="urun-grid">
     @foreach (var u in Model)
     {
-        <div class="urun-kart">
-            <div class="urun-fotograf">
-                <img src="~/Assets/ProductImages/@u.ImagePath"
-                     alt="@u.Name" />
+        <a href="@Url.Action("Find", "UserProduct", new { id = u.ID })"
+           class="urun-detay-btn">
+            <div class="urun-kart">
+                <div class="urun-fotograf">
+                    <img src="~/Assets/ProductImages/@u.ImagePath"
+                         alt="@u.Name" />
+                </div>
+                <div class="urun-bilgi">
+                    <div class="urun-kategori">@u.category.Name</div>
+                    <div class="urun-isim">@u.Name</div>
+                    <div class="urun-fiyat">@u.Price.ToString("C")</div>
+
+                </div>
             </div>
-            <div class="urun-bilgi">
-                <div class="urun-kategori">@u.category.Name</div>
-                <div class="urun-isim">@u.Name</div>
-                <div class="urun-fiyat">@u.Price.ToString("C")</div>
-                <a href="@Url.Action("Find", "UserProduct", new { id = u.ID })"
-                   class="urun-detay-btn">Detayı Gör →</a>
-            </div>
-        </div>
+        </a>
     }
 </div>
 

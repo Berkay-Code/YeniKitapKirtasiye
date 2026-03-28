@@ -15,5 +15,10 @@ namespace YeniKitapKirtasiyeWebApp.Controllers
             List<Category> kategoriler = db.Categories.ToList();
             return PartialView("_CategorySidebar", kategoriler);
         }
+
+        //public ActionResult _MenuOlustur()
+        //{
+        //    return View(db.Categories.ToList());
+        //}
     }
 }
