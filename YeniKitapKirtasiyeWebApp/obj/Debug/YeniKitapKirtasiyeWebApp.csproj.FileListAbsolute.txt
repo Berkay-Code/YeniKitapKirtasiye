@@ -74,3 +74,5 @@ C:\Users\celil\source\repos\YeniKitapKirtasiyeWebApp\YeniKitapKirtasiyeWebApp\ob
 C:\Users\celil\source\repos\YeniKitapKirtasiyeWebApp\YeniKitapKirtasiyeWebApp\obj\Debug\YeniKita.7874C4DB.Up2Date
 C:\Users\celil\source\repos\YeniKitapKirtasiyeWebApp\YeniKitapKirtasiyeWebApp\obj\Debug\YeniKitapKirtasiyeWebApp.dll
 C:\Users\celil\source\repos\YeniKitapKirtasiyeWebApp\YeniKitapKirtasiyeWebApp\obj\Debug\YeniKitapKirtasiyeWebApp.pdb
+C:\Users\celil\source\repos\YeniKitapKirtasiyeWebApp\YeniKitapKirtasiyeWebApp\bin\Newtonsoft.Json.dll
+C:\Users\celil\source\repos\YeniKitapKirtasiyeWebApp\YeniKitapKirtasiyeWebApp\bin\Newtonsoft.Json.xml
