@@ -36,37 +36,39 @@
             </div>
         </div>
 
-        <div class="kart-form">
+        @using (Html.BeginForm("Onayla", "Sepet", new { @class = "kart-form" }))
+        {
             <h3 class="ozet-baslik">Kart Bilgileri</h3>
 
             <div class="form-grup">
                 <label>Kart Üzerindeki İsim</label>
-                <input type="text" placeholder="Ad Soyad" class="form-input" />
+                <input type="text" name="KartIsim" class="form-input"
+                       placeholder="Ad Soyad" />
             </div>
 
             <div class="form-grup">
                 <label>Kart Numarası</label>
-                <input type="text" placeholder="0000 0000 0000 0000"
-                       maxlength="19" class="form-input" id="kartNo" />
+                <input type="text" name="KartNo" class="form-input"
+                       placeholder="0000 0000 0000 0000" maxlength="16" />
             </div>
 
             <div class="form-row">
                 <div class="form-grup">
                     <label>Son Kullanma Tarihi</label>
-                    <input type="text" placeholder="AA / YY"
-                           maxlength="7" class="form-input" />
+                    <input type="text" name="SonKullanma" class="form-input"
+                           placeholder="AA / YY" maxlength="4" />
                 </div>
                 <div class="form-grup">
                     <label>CVV</label>
-                    <input type="text" placeholder="000"
-                           maxlength="3" class="form-input" />
+                    <input type="text" name="Cvv" class="form-input"
+                           placeholder="000" maxlength="3" />
                 </div>
             </div>
 
-            <button class="sepet-btn odeme-btn">Ödemeyi Tamamla</button>
+            <button type="submit" class="sepet-btn odeme-btn">Ödemeyi Tamamla</button>
 
             <a href="@Url.Action("Index", "Sepet")" class="geri-btn">← Sepete Dön</a>
-        </div>
+        }
 
     </div>
 </body>

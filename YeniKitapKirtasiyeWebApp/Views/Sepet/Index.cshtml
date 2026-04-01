@@ -13,6 +13,17 @@
         <p>Sepetiniz boş.</p>
         <a href="@Url.Action("Index", "UserHome")" class="sepet-btn">Alışverişe Başla</a>
     </div>
+    if (TempData["SatinAlmaDurum"] != null)
+    {
+        if (TempData["SatinAlmaDurum"].ToString() == "başarılı")
+        {
+            <div class="satin-alma-basarili" style="text-align:center">Satın alma işlemi başarılı!</div>
+        }
+        else if (TempData["SatinAlmaDurum"].ToString() == "başarısız")
+        {
+            <div class="satin-alma-basarisiz" style="text-align:center">Satın alma işlemi başarısız oldu. Lütfen tekrar deneyin.</div>
+        }
+    }
 }
 else
 {

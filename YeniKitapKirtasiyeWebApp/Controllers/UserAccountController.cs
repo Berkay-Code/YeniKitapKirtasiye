@@ -33,6 +33,7 @@ namespace YeniKitapKirtasiyeWebApp.Controllers
                 return View(model);
             }
             Session["UserName"] = kullanici.Name + " " + kullanici.Surname;
+            Session["UserID"] = kullanici.ID;
 
             return RedirectToAction("Index", "UserHome");
         }

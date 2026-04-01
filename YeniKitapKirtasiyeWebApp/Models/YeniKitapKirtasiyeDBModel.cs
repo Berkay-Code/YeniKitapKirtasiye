@@ -16,9 +16,15 @@ namespace YeniKitapKirtasiyeWebApp.Models
         public DbSet<Manager> Managers { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Orders> Orders { get; set; }
+        public DbSet<OrderDetails> OrderDetails { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<OrderDetails>()
+            .HasKey(od => new { od.OrderID, od.ProductID });
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

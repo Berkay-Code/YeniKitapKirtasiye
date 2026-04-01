@@ -34,7 +34,6 @@ namespace YeniKitapKirtasiyeWebApp.Controllers
                 if (sayi > 0)
                 {
                     items.First(x => x.UrunId == id).Adet++;
-                    // sepete'de yönlendirme yapılabilir
                 }
                 else
                 {
@@ -48,7 +47,7 @@ namespace YeniKitapKirtasiyeWebApp.Controllers
             }
             else
             {
-                HttpCookie kurabiye = new HttpCookie("sepet");
+                HttpCookie kurabiye = new HttpCookie("Sepet");
                 List<SepetItem> items = new List<SepetItem>();
                 items.Add(new SepetItem() { UrunId = p.ID, UrunAdi = p.Name, Fiyat = p.Price, Adet = 1 });
                 var settings = new JsonSerializerSettings { StringEscapeHandling = StringEscapeHandling.EscapeNonAscii };
@@ -62,10 +61,10 @@ namespace YeniKitapKirtasiyeWebApp.Controllers
 
         public ActionResult CookieSepetTemizle()
         {
-            if (Request.Cookies["sepet"] != null)
+            if (Request.Cookies["Sepet"] != null)
             {
-                Response.Cookies.Remove("sepet");
-                HttpCookie kurabiye = new HttpCookie("sepet");
+                Response.Cookies.Remove("Sepet");
+                HttpCookie kurabiye = new HttpCookie("Sepet");
                 kurabiye.Value = null;
                 kurabiye.Expires = DateTime.Now.AddDays(-1);
                 Response.Cookies.Add(kurabiye);

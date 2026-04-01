@@ -6,12 +6,14 @@ using System.Web.Mvc;
 using YeniKitapKirtasiyeWebApp.Data.Helper;
 using YeniKitapKirtasiyeWebApp.Data.ViewModel;
 using YeniKitapKirtasiyeWebApp.Filters;
+using YeniKitapKirtasiyeWebApp.Models;
 
 namespace YeniKitapKirtasiyeWebApp.Controllers
 {
     [UserAuthenticationFilter]
     public class SepetController : Controller
     {
+        YeniKitapKirtasiyeDBModel db = new YeniKitapKirtasiyeDBModel();
         // GET: Sepet
         public ActionResult Index()
         {
@@ -24,6 +26,7 @@ namespace YeniKitapKirtasiyeWebApp.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
         public ActionResult Onayla()
         {
             List<SepetItem> sepet = SepetHelper.SepetAl(Session);
@@ -33,6 +36,53 @@ namespace YeniKitapKirtasiyeWebApp.Controllers
             }
 
             return View(sepet);
+        }
+
+        [HttpPost]
+        public ActionResult Onayla(string kartIsim, string kartNo, string sonKullanma, string cvv)
+        {
+            try
+            {
+                var sepet = SepetHelper.SepetAl(Session);
+                int userId = Convert.ToInt32(Session["UserID"]);
+                decimal toplamTutar = sepet.Sum(x => x.Toplam);
+
+                var order = new Orders
+                {
+                    CustomerID = userId,
+                    OrderDateTime = DateTime.Now,
+                    SumPrice = toplamTutar,
+                    KartIsim = kartIsim,
+                    KartNo = kartNo,
+                    SonKullanmaTarihi = sonKullanma,
+                    CVV = cvv
+                };
+                db.Orders.Add(order);
+                db.SaveChanges();
+
+                foreach (var item in sepet)
+                {
+                    var detail = new OrderDetails
+                    {
+                        OrderID = order.ID,
+                        ProductID = item.UrunId,
+                        Price = item.Fiyat,
+                        Quantity = item.Adet
+                    };
+                    db.OrderDetails.Add(detail);
+                }
+                db.SaveChanges();
+
+                SepetHelper.SepetTemizle(Session);
+                TempData["SatinAlmaDurum"] = "başarılı";
+
+                return RedirectToAction("Index", "Sepet");
+            }
+            catch
+            {
+                TempData["SatinAlmaDurum"] = "başarısız";
+                return RedirectToAction("Index", "Sepet");
+            }
         }
 
         public ActionResult AdetGuncelle(int urunId, string islem)
