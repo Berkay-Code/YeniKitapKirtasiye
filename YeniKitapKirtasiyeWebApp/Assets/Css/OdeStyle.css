@@ -1,0 +1,64 @@
+﻿.checkout-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 750px;
+    float:left;
+}
+
+/* Form Stilleri */
+h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.input-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+    input:focus {
+        outline: none;
+        border-color: #1d2b64;
+    }
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.pay-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+    .pay-btn:hover {
+        background-color: #219150;
+    }

@@ -1,0 +1,73 @@
+﻿@model YeniKitapKirtasiyeWebApp.Data.ViewModel.OdeViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Assets/Css/OdeStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="checkout-container">
+        @using (Html.BeginForm())
+        {
+            <div class="payment-form">
+                <div>
+                    @ViewBag.durum
+                </div>
+                <h2>Ödeme Bilgileri</h2>
+
+                <div class="input-group">
+                    <label for="card-name">Kart Üzerindeki İsim</label>
+                    <input type="text" id="cardname" placeholder="John Doe">
+                    @Html.ValidationMessageFor(model => model.CardName, "", new { @style = "color:red" })
+                </div>
+
+                <div class="input-group">
+                    <label for="card-number">Kart Numarası</label>
+                    <input type="text" id="cardnumber" maxlength="19" placeholder="0000 0000 0000 0000">
+                    @Html.ValidationMessageFor(model => model.CardNumber, "", new { @class = "color:red" })
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="expiry">Son Kullanma</label>
+                        <input type="text" id="expiry" placeholder="AA/YY" maxlength="5">
+                        @Html.ValidationMessageFor(model => model.Expiry, "", new { @class = "color:red" })
+                    </div>
+                    <div class="input-group">
+                        <label for="cvv">CVV</label>
+                        <input type="password" id="cvv" placeholder="***" maxlength="3">
+                        @Html.ValidationMessageFor(model => model.CVV, "", new { @class = "color:red" })
+                    </div>
+                </div>
+
+                <button type="submit" class="pay-btn">Ödemeyi Tamamla</button>
+            </div>
+        }
+    </div>
+    <div class="sepettoplam">
+        <div class="sepettoplamBaslik">
+            Toplam Bakiye
+        </div>
+        <div class="icerik">
+            <div class="satir">
+                <b>Ara Toplam = </b>
+            </div>
+            <div class="satir">
+                <b>KDV = </b>
+            </div>
+            <div class="satir">
+                <b>Genel Toplam = </b>
+            </div>
+        </div>
+
+        <div style="border-top:1px solid silver">
+
+        </div>
+    </div>
+</body>
+</html>
